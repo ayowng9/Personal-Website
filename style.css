@@ -1007,3 +1007,13 @@ ul.bullet li::before {
     Buy This Book
   </a>
 </p>
+.book-cover {
+  width: 150px;              /* fixed, clean size */
+  height: auto;              /* keep proportions */
+  display: block;
+  margin: 0 auto 1rem auto;  /* center + spacing */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;         /* keeps it tidy if proportions differ */
+}
+
