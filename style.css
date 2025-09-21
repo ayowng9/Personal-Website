@@ -998,3 +998,12 @@ ul.bullet li::before {
   transform: translateY(0); /* click feedback */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+<p>
+  <a class="button-buy" 
+     href="https://www.amazon.com/Politics-Government-Atinuke-Elizabeth-Ayowole/dp/B0DT9YJWFP?ref_=ast_author_dp_rw" 
+     target="_blank" 
+     rel="noopener">
+    Buy This Book
+  </a>
+</p>
