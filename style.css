@@ -969,3 +969,32 @@ ul.bullet li::before {
   font-weight: 600;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+.button-buy {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: linear-gradient(135deg, #7b1e3a, #d62b70); /* burgundy → rose */
+  border: none;
+  border-radius: 50px; /* pill shape */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* remove underline */
+}
+
+.button-buy:hover {
+  background: linear-gradient(135deg, #d62b70, #7b1e3a); /* flip gradient */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.button-buy:active {
+  transform: translateY(0); /* click feedback */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
