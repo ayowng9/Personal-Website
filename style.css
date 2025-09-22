@@ -215,7 +215,7 @@ nav a:hover {
  .sidebar img.avatar {
     display: block;
     margin-left: auto;
-    margin-right: auto;  /* ✅ centers the image */
+    margin-right: auto;  /* centers the image */
     margin-bottom: 1rem;
   }
   /* Ensure name + title align left under avatar */
@@ -223,7 +223,12 @@ nav a:hover {
   .sidebar .title,
   .sidebar .contact,
   .sidebar .facts {
-    text-align: left;   /* ✅ forces left alignment */
+    text-align: left;   /* forces left alignment */
+  }
+  
+  /* About/content section stays untouched */
+  .content {
+    text-align: left;
   }
 }
 
