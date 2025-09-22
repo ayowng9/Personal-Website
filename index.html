@@ -66,7 +66,7 @@
       <div class="content">
         <h2>About</h2>
         <p>
-          I am a PhD Candidate in Political Science at Southern Illinois University, Carbondale — a Research 1 (R1) institution (Expected Graduation: December 2025), and an Adjunct Faculty in Government at Southeastern Illinois College. I study American politics, and my research interests include political behavior, political communications, public policy and democracy, elections and election law, and comparative perspectives. I specialize in computational methods, drawing on diverse data sources from surveys to historical records.
+          I am a PhD Candidate in Political Science at Southern Illinois University, Carbondale — a Research 1 (R1) institution (Expected Graduation: December 2025), and an <b>Adjunct Faculty</b> in Government at Southeastern Illinois College. I study American politics, and my research interests include political behavior, political communications, public policy and democracy, elections and election law, and comparative perspectives. I specialize in computational methods, drawing on diverse data sources from surveys to historical records.
         </p>
        <p>
           I am The Academy Fellow at the Heritage Foundation’s Young Leaders Program and a Fellow of the Young African Leadership Initiative (YALI) by the U.S. Department of State. Previously, I was an Assistant Editor-in-Chief for the <em>Journal of Statesmanship and Public Policy</em>.
@@ -423,11 +423,21 @@
     </a>
   </p>
 
-  <!-- Contact under CV -->
-  <h2>Contact</h2>
-  <p>
-    <a class="button" href="#" id="emailButton">Email Me</a>
-  </p>
+<!-- Contact under CV -->
+<h2>Contact</h2>
+
+<form action="https://formspree.io/f/https://formspree.io/f/mldprlpy" method="POST" class="contact-form">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required />
+
+  <label for="email">Your Email</label>
+  <input type="email" name="email" id="email" required />
+
+  <label for="message">Message</label>
+  <textarea name="message" id="message" rows="5" required></textarea>
+
+  <button type="submit" class="button">Send Message</button>
+</form>
 </section>
 </main>
 
