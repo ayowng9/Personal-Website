@@ -208,26 +208,13 @@ nav a:hover {
   }
 
   .sidebar {
+    text-align: left;
     margin-bottom: 0;
   }
 
  .sidebar img.avatar {
     display: block; /* centers the image */
     margin: 0 auto 1rem auto;
-  }
-  
-  /* Ensure name + title align left under avatar */
-  .sidebar h1.name,
-  .sidebar .title,
-  .sidebar .contact,
-  .sidebar .facts {
-    text-align: left;   /* forces left alignment */
-     margin-left: 0;
-  }
-  
-  /* About/content section stays untouched */
-  .content {
-    text-align: left;
   }
 }
 
