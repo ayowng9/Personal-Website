@@ -212,12 +212,11 @@ nav a:hover {
     margin-bottom: 0;
   }
 
- .sidebar img.avatar {
-    display: block; /* centers the image */
-    margin: 0 auto 1rem auto;
+  .sidebar img.avatar {
+    margin: 0 0 1rem 0;
+    margin: 0 auto 1rem; /* keep avatar centered only */
   }
 }
-
 .avatar {
   width: 180px;
   height: 180px;
