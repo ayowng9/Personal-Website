@@ -260,18 +260,6 @@ nav a:hover {
   gap: 12px;
 }
 
-.fact {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  align-items: start;
-  gap: 12px;
-  padding: 12px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
-
 .fact-icon {
   width: 40px;
   height: 40px;
@@ -289,6 +277,7 @@ nav a:hover {
 
 .fact-value {
   font-weight: 600;
+   color: #111827; /* dark ink */
 }
 
 .content {
