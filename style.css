@@ -129,13 +129,17 @@ nav a:hover {
 
 /* -------------------- Hero Grid (Home/About) -------------------- */
 /* ✅ Homepage Grid Layout */
-#about {
-  display: block;  /* stack vertically */
-}
-
-.sidebar, .content {
-  max-width: 800px;
-  margin: 0 auto 2rem auto; /* center and add spacing */
+display: grid; 
+grid-template-columns: 340px 1fr; 
+gap: 28px; 
+align-items: start; 
+} 
+.sidebar { 
+  background: #fff; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 16px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); 
+  padding: 22px; 
 }
 
 .avatar {
