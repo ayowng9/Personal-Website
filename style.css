@@ -1017,3 +1017,13 @@ ul.bullet li::before {
   object-fit: cover;         /* keeps it tidy if proportions differ */
 }
 
+.book img {
+  width: auto;            /* scale to the width of the box */
+  max-height: 220px;       /* don’t let it get too wide */
+  display: block;         
+  margin: 0 auto 1rem;    /* center image + spacing below */
+  border-radius: 8px;     /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
+  object-fit: contain;     /* fit nicely inside box */
+}
+
