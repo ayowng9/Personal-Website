@@ -5,6 +5,16 @@ navToggle.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
 
+// ✅ Collapse nav when a link is clicked (on mobile)
+const navLinks = document.querySelectorAll(".nav a");
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (nav.classList.contains("show")) {
+      nav.classList.remove("show");
+    }
+  });
+});
+
 // Sticky header scroll effect
 const hdr = document.querySelector('.site-header');
 const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 4);
