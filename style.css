@@ -1027,3 +1027,30 @@ ul.bullet li::before {
   object-fit: contain;     /* fit nicely inside box */
 }
 
+.book img {
+  width: auto;
+  max-height: 220px;  /* keeps all covers uniform */
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  object-fit: contain;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+  background: #5a142b;  /* darker burgundy */
+  transform: translateY(-2px);
+}
