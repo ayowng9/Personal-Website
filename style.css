@@ -129,61 +129,13 @@ nav a:hover {
 
 /* -------------------- Hero Grid (Home/About) -------------------- */
 /* ✅ Homepage Grid Layout */
-.hero-grid {
-  display: block; /* default: stacked on mobile */
+#about {
+  display: block;  /* stack vertically */
 }
 
-.sidebar,
-.content {
-  max-width: 900px;
-  margin: 0 auto 2rem auto;
-}
-
-/* ✅ Desktop layout: 2 columns side by side */
-@media (min-width: 900px) {
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 40px;
-    align-items: start;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .sidebar,
-  .content {
-    max-width: 100%; /* let grid handle widths */
-    margin: 0;       /* reset margins inside grid */
-  }
-}
-
-/* ✅ Sidebar styling (softer, less “boxy”) */
-.sidebar {
-  background: #fff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f1f1f1;
-}
-
-.sidebar img.avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 1rem;
-}
-
-.sidebar h1.name,
-.sidebar .title {
-  text-align: center;
-  margin: 0.5rem 0;
-}
-
-.sidebar .contact,
-.sidebar .facts {
-  text-align: center;
-  margin-top: 1.2rem;
+.sidebar, .content {
+  max-width: 800px;
+  margin: 0 auto 2rem auto; /* center and add spacing */
 }
 
 .avatar {
