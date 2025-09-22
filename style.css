@@ -1160,22 +1160,3 @@ ul.bullet li::before {
   color: #2563eb; /* highlight when expanded */
 }
 
-.contact-form {
-  display: grid;
-  gap: 12px;
-  max-width: 400px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-.contact-form label {
-  font-weight: 600;
-  margin-top: 8px;
-}
