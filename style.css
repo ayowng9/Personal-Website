@@ -1190,3 +1190,10 @@ ul.bullet li::before {
   border-color: var(--brand);
   box-shadow: 0 0 4px rgba(30, 58, 138, 0.4);
 }
+
+/* Left align contact form inside section */
+.section .contact-form {
+  margin-left: 0;   /* align to left */
+  margin-right: auto;
+  justify-self: start; /* grid-friendly alignment */
+}
