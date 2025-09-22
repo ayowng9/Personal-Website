@@ -1106,3 +1106,38 @@ ul.bullet li::before {
   background: #5a142b;  /* darker burgundy */
   transform: translateY(-2px);
 }
+
+/* === Sidebar Alignment Fix === */
+
+/* Always center avatar, name, title, and links */
+.sidebar img.avatar,
+.sidebar h1.name,
+.sidebar .title,
+.sidebar .contact {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Keep facts left-aligned (no boxed style) */
+.sidebar .facts {
+  text-align: left;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Desktop layout: sidebar on left, content on right */
+@media (min-width: 900px) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* sidebar + content */
+    gap: 40px;
+    align-items: start;
+  }
+
+  .sidebar {
+    margin-bottom: 0;
+  }
+}
+
