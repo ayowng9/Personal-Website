@@ -260,16 +260,6 @@ nav a:hover {
   gap: 12px;
 }
 
-.fact-icon {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  background: #e5edff;
-  font-size: 20px;
-}
-
 .fact-label {
   font-size: 0.85rem;
   color: #6b7280;
