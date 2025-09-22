@@ -29,6 +29,33 @@ tabs.forEach(tab => {
   });
 });
 
+// Sticky header scroll effect
+const hdr = document.querySelector('.site-header');
+const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 4);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Auto-update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---------------- Tabs Script ----------------
+const tabs = document.querySelectorAll("[data-tab]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    tabContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    const target = document.querySelector(tab.dataset.tab);
+    target.classList.add("active");
+
+    // NEW: auto-close mobile nav after clicking a tab
+    nav.classList.remove("show");
+  });
+});
+
 // Contact button opens email client
 const emailBtn = document.getElementById("emailButton");
 if (emailBtn) {
