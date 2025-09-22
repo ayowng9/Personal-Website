@@ -1143,3 +1143,19 @@ ul.bullet li::before {
     margin-bottom: 0;
   }
 }
+/* --- Blog subsection dropdown titles (e.g., Conferences A–F) --- */
+.post-body summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  list-style: none; /* remove default arrow spacing */
+}
+
+.post-body summary::marker {
+  content: ""; /* hide default disclosure triangle if you don’t want it */
+}
+
+.post-body details[open] summary {
+  color: #2563eb; /* highlight when expanded */
+}
