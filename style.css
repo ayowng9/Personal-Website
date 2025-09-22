@@ -1165,7 +1165,7 @@ ul.bullet li::before {
   display: grid;
   gap: 14px;
   max-width: 500px;
-  margin: 0 auto; /* centers the form */
+  /* ❌ remove margin: 0 auto; so it aligns left */
 }
 
 .contact-form label {
@@ -1180,4 +1180,13 @@ ul.bullet li::before {
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
-  width:
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 4px rgba(30, 58, 138, 0.4);
+}
